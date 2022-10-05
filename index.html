@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Weather
+    </title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="container" class="container">
+            <div class="updateBlock">
+                <img id="updateIcon" src="images/updates.png" alt="Update data">
+                <div id="updateDate">--/--/---</div>
+                <div id="updateTime">--:--</div>
+            </div>
+            <div class="cityBlock">
+                <div id="titleCity">Город</div>
+                <img id="editIcon" src="images/edit.png" alt="Edit city">
+                <img id="locationIcon" src="images/near-me.png" alt="Get location">
+            </div>
+            <div class="main">
+                <div>
+                    <img id="icon" src="images/weather/clouds.png" alt="sunny">
+                </div>
+                <div id="temp">-°C</div>
+                <div id="tempMaxMin">
+                    <span id="tempMax">-°</span>
+                    /
+                    <span id="tempMin">-°</span>
+                </div>
+                <div id="state"></div>
+            </div>
+            <div class="secondary">
+                <div class="parameter">
+                    Ощущается как
+                    <div id="tempFeels" class="value">-</div>
+                    <span id="tempFeelsUnit">градус</span>
+                </div>
+                <div class="parameter">
+                    Атмосферное давление
+                    <div id="pressure" class="value">---</div>
+                    мм рт. ст.
+                </div>
+                <div class="parameter">
+                    Влажность
+                    <div id="humidity" class="value">-</div>
+                    <span id="humidityUnit">процент</span>
+                </div>
+                <div class="parameter">
+                    Скорость ветра
+                    <div id="windSpeed" class="value">-</div>
+                    м/с
+                </div>
+                <div class="parameter">
+                    Направление ветра
+                    <div id="windDeg" class="value">-</div>
+                    <span id="windDegUnit">градус</span>
+                </div>
+                <div class="parameter">
+                    Направление ветра
+                    <div id="windDegText" class="value">-</div>
+                </div>
+                <div class="parameter">
+                    Восход
+                    <div id="sunrise" class="value">--:--</div>
+                </div>
+                <div class="parameter">
+                    Закат
+                    <div id="sunset" class="value">--:--</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+body {
+    background-color: #183550;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 16px;
+    margin: 0px;
+}
+.black {
+    color: #000000;
+}
+.clouds {
+    background-image: radial-gradient(#ffffff, #5d616c);
+}
+.clouds-night {
+    background-image: radial-gradient(#ffffff, #000000);
+}
+.day {
+    color: #000000;
+    background-image: radial-gradient(#ffff00cf, #ff00009e);
+}
+.night {
+    background-image: radial-gradient(#000b8b, #000000);
+}
+.fog {
+    background-color: #5e5c5c80;
+}
+.rain {
+    background-image: url(images/background/rain.gif);
+}
+.snow {
+    background-image: url(images/background/snow.gif);
+}
+.lightning {
+    background-image: url(images/background/lightning.jpg);
+}
+.container {
+    height: 100vh;
+}
+.menuBlock {
+    float: left;
+    text-align: center;
+    margin: 15px;
+    position: fixed;
+    left: 0px;
+}
+#menuIcon {
+    cursor: pointer;
+}
+.updateBlock {
+    float: right;
+    text-align: center;
+    margin: 20px;
+    position: fixed;
+    right: 0px;
+}
+#updateIcon {
+    cursor: pointer;
+}
+.cityBlock {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+.cityBlock > div {
+    display: inline;
+}
+.cityBlock > img {
+    cursor: pointer;
+    vertical-align: middle;
+    width: 24px;
+}
+.main {
+    text-align: center;
+    padding: 10px 0px;
+}
+#temp {
+    font-size: 7rem;
+    font-weight: 700;
+}
+#tempMax {
+    font-weight: 500;
+}
+#tempMin {
+    font-weight: 100;    
+}
+.secondary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.parameter {
+    text-align: center;
+    width: 210px;
+    margin: 10px 5px;
+    padding: 5px;
+}
+.parameter:hover {
+    cursor: default;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px 2px rgba(255, 255, 255, 0.25);
+}
+.parameter-black:hover {
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.75);
+}
+.value {
+    font-size: 4rem;
+}
